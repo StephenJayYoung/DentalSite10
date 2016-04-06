@@ -192,6 +192,43 @@ header #logo img {
 
 }
 
+
+#top-bar {
+    background-color: #f0f0f0;
+    box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, .2);
+}
+
+#top-bar .call-today {
+    font-size: 22px;
+    color: #000 !important;
+}
+
+#top-bar .call-today a {
+    color: #000 !important;
+}
+
+#top-bar .call-today a:hover {
+    color: #000 !important;
+}
+
+#top-bar a.button,
+#top-bar button {
+    border-color: #ff6400 !important;
+    background-color: #ff6400 !important;
+    color: #ffffff !important;
+    border-radius: 0px !important;
+}
+
+#top-bar a.button:hover,
+#top-bar button:hover {
+    background-color: #333333 !important;
+    color: #fff !important;
+    border-color: #ffffff;
+    border-radius: 0px !important;
+}
+
+
+
 #slider {
 
 }
@@ -212,89 +249,14 @@ header #logo img {
     right: 5%;
 }
 
-#calls-to-action {
-    padding: 20px 0;
+#quote {
     background-color: #ff6400;
-    color: #ffffff;
+    color: #fff !important;
+    padding-top: 25px;
 }
 
-.device-xxs #calls-to-action {
-    padding: 10px 0;
-}
-
-#calls-to-action h3 {
-    font-size: 15px;
-    font-weight: normal;
-    margin-bottom: 0;
-    color: #ffffff !important;
-}
-
-#calls-to-action h3 a {
-    margin-top: -5px;
-    display: block;
-    font-size: 2.25em;
-    font-weight: bold;
-    color: #ffffff !important;
-}
-
-.device-xs #calls-to-action h3 a,
-.device-xxs #calls-to-action h3 a {
-    font-size: 2em;
-}
-
-#calls-to-action p,
-#calls-to-action span {
-    margin-top: 8px;
-}
-
-#calls-to-action span a {
-    color: #ffffff !important;
-}
-
-#calls-to-action a.button, #members a.button, #location a.button, #schedule-form button:not(.close), #services a.button {
-    height: auto !important;
-    padding: 5px 20px!important;
-    background-color: #0164a5;
-    border: 2px solid #ffffff;
-    margin: 0;
-}
-
-#calls-to-action a.button:hover, #members a.button:hover, #location a.button:hover, #schedule-form button:not(.close):hover, #services a.button:hover {
-    color: #0164a5;
-    background-color: #ffffff;
-    border-color: #0164a5;
-}
-
-#calls-to-action .phone-numbers {
-    border-right: 1px solid rgba(255, 255, 255, .72);
-    padding-right: 20px;
-    text-align: right;
-}
-
-#calls-to-action .schedule-online {
-    border-left: 1px solid rgba(255, 255, 255, .26);
-    padding-left: 20px;
-    text-align: left;
-}
-
-.device-xs #calls-to-action .phone-numbers,
-.device-xs #calls-to-action .schedule-online,
-.device-xxs #calls-to-action .phone-numbers,
-.device-xxs #calls-to-action .schedule-online {
-    border-left: none;
-    border-right: none;
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-}
-
-#calls-to-action .existing-patients p {
-    color: #ffffff;
-    font-size: 1.3em;
-}
-
-#calls-to-action .existing-patients a {
-    color: inherit;
+blockquote {
+    border-left: 5px solid #0164a5;
 }
 
 
