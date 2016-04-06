@@ -250,8 +250,8 @@ header #logo img {
 }
 
 #quote {
-    background-color: #ff6400;
-    color: #fff !important;
+    background-color: #f0f0f0;
+    color: #222222 !important;
     padding-top: 25px;
 }
 
@@ -354,11 +354,20 @@ blockquote {
 }
 
 
-#services{background-color:#f1f3f9;}
+#services{background-color:#fff;}
+#services h2{color: #0164a5 !important;}
 #services h3{font-size:32px;}
 .device-sm #services h3{font-size:24px;}
 .device-xxs #services h3{font-size:28px;}
 #services i{color:#0079c1;}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #0079c1;
+}
+
 #tour {
 
 }
@@ -467,3 +476,7 @@ blockquote {
         #copyrights p a {
             color: inherit;
         }
+
+.button {
+    background-color: #ff6400;
+}
