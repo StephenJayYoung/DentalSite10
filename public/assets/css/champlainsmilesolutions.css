@@ -360,7 +360,7 @@ header #logo img {
             }
 
 #reviews {
-    background: url('/assets/images/reviews/background.jpg') 50% 0% no-repeat;
+    background: url('.../images/background.jpg') 50% 0% no-repeat;
     background-size: cover;
 }
 
@@ -399,6 +399,95 @@ header #logo img {
         color: #ffffff;
         border-color: #ffffff;
     }
+
+#offer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #fff;
+}
+
+#offer .call-today {
+    display: inline-block;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+#offer .call-today a {
+    color: #ef6a35 !important;
+}
+
+.button.button-rounded {
+    border-radius: 0px !important;
+}
+
+#offer .button {
+    border-color: #ef6a35 !important;
+    background-color: #ef6a35 !important;
+    color: #ffffff !important;
+    border-radius: 0px;  
+}
+
+#offer a.button:hover,
+#offer button:hover {
+    border-color: #ef6a35 !important;
+    background-color: #ffffff !important;
+    color: #222222 !important;
+    border-radius: 0px;
+}
+
+#offer h2 {
+    color: #455565 !important;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+#offer h2 span {
+    color: #455565 !important;
+    text-transform: uppercase;
+}
+
+#offer h4 {
+    color: #222222 !important;
+}
+
+.device-xxs #offer h2, .device-xs #offer h2 {
+    font-size: 22px;
+    margin-top: 5px !important;
+    text-align: center !important;
+}
+
+.device-xxs #offer h2, .device-xxs #offer h4, .device-xs #offer h2, .device-xs #offer h2 {
+    margin-bottom: 5px;
+    text-align: center !important;
+}
+
+.device-xxs #offer, .device-xs #offer {
+    padding: 10px 0;
+}
+
+.device-xxs #offer .call-today, .devixe-xs #offer .call-today {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.device-xxs #offer .col_half, .device-xs #offer .col_half {
+    margin-bottom: 10px !important;
+    text-align: center !important;
+}
+
+.device-xxs #offer h2 span, .device-xs #offer h2 span {
+    font-size: 18px;
+}
+
+#offer h2 span {
+    color: #ef6a35 !important;
+}
+
+.device-xxs #offer h2 span,
+.device-xs #offer h2 span {
+    font-size: 17px;
+}
 
 
 
