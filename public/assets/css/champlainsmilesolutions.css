@@ -261,7 +261,7 @@ blockquote {
 
 
 #reviews {
-    background: url('.../images/background.jpg') 50% 0% no-repeat;
+    background: url('../images/background.jpg') 50% 0% no-repeat;
     background-size: cover;
 }
 
