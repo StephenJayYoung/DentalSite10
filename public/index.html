@@ -179,6 +179,31 @@
                     </div>
                 </section>
 
+                <!-- Special Offer
+                ============================================= -->
+                <section id="offer" class="content-section clearfix page-section">
+                    <div class="container clearfix">
+                        <div class="divcenter center clearfix" style="max-width: 900px;">
+                            <div class="offer-heading">
+                            </div>
+                            <div class="clearfix">
+                                <div class="col_half tright call-today nobottommargin">
+                                    <a href="tel:+18889213878"><strong>888-921-3878</strong></a>
+                                </div>
+                                <div class="col_half tleft col_last nobottommargin">
+                                    <a href="#" data-toggle="modal" data-target="#schedule-form" class="button button-rounded tright">Request Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        <script type="text/template" id="specials-template">
+            <h2>Limited Time <br class="hidden-sm hidden-md hidden-lg hidden-xl" /><%-  data.season %> Special<br /><span>Free Implant Consultation</span></h2>
+            <h4>Limit <u>6</u> consultation slots available before <%= data.endMonth %> <%= data.endDay %>, <%= data.endYear %></h4>
+        </script>
+
+
 
                 <!-- Special Offer
                 ============================================= -->
@@ -261,22 +286,48 @@
                     </div>
                 </section>
 
-                <section id="sedation" class="page-section">
+              <!-- Services
+                ============================================= -->
+                <section id="services" class="content-section clearfix page-section">
                     <div class="container clearfix">
-                        <div class="heading-block noborder center">
-                            <h2>Sedation Services</h2>
-                            <span><!-- Download and complete the following forms prior to your&nbsp;scheduled&nbsp;appointment --></span>
+                        <div class="heading-block center noborder">
+                            <h2>Why Choose Sedation Dentistry?</h2>
                         </div>
                         <div class="row">
-<!--                             <div class="col-xs-6 col-sm-4 col-sm-offset-2">
-                                <a href="/pdfs/medical-history.pdf" target="_blank" class="button btn-block nomargin center">Medical History PDF</a>
+                            <div class="col-sm-4">
+                                <h3 class="nobottommargin"><i class="fa fa-ban"></i>&nbsp;&nbsp;Reduce Anxiety</h3>
+                                <p>Enjoy visiting the dentist again! Treatments seem to take only minutes to complete.</p>
                             </div>
-                            <div class="col-xs-6 col-sm-4">
-                                <a href="/pdfs/dental-history.pdf" target="_blank" class="button btn-block nomargin center">Dental History PDF</a>
-                            </div> -->
+                            <div class="col-sm-4">
+                                <h3 class="nobottommargin"><i class="fa fa-money"></i>&nbsp;&nbsp;Save Money</h3>
+                                <p>Longer single appointments  and decreased need for costly anesthesia saves you money.</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h3 class="nobottommargin"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Save Time</h3>
+                                <p>Many previously time-consuming procedures can now be completed in one appointment.</p>
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <div class="heading-block center noborder">
+                            <h2>What is Sedation Dentistry?</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5 col-md-4">
+                                <img src="assets/images/services/sedation-woman.jpg" class="img-responsive img-full-width" alt="" />
+                                <br class="hidden-xxs hidden-xs hidden-md hidden-lg hidden-xl" />
+                                <img src="assets/images/services/sedation-man.jpg" class="img-responsive img-full-width hidden-xxs hidden-xs hidden-md hidden-lg hidden-xl" alt="" />
+                                <br class="hidden-md hidden-lg hidden-xl" />
+                            </div>
+                            <div class="col-sm-7 col-md-8">
+                                <p>Drs. Matt and Kay Giulianelli are two of a limited number of general dentists that offer IV sedation and can complete most or all of your dentistry, including dental implants, while you are sedated.</p>
+                                <p><strong>Oral sedation</strong> dentistry is now the most common technique used in the United States to quell patient fears. It makes use of a prescription medication that induces a drowsy, relaxed feeling. We administer this medication orally (no needles!)</p>
+                                <p><strong>Intravenous or IV sedation</strong> is offered to the anxious, the fearful or the very young patient. It is a management technique that uses medications to assist the patient to cope with fear and anxiety. IV sedation is both safe and effective when administered by our trained professionals.</p>
+                                <p>Due to the relaxing effects of the medication, patients must have a friend or family member bring them to the dental office and return them home.</p>
+                            </div>
                         </div>
                     </div>
-                    <br /><br />
                 </section>
 
                 <!-- Location
@@ -439,9 +490,66 @@
         </script>
 
 
+        <!-- Initialize Page Scripts
+        ============================================= -->
+        <script type="text/javascript">
+
+            // rotation of special offers heading
+            // scope our template data to the "data" variable.
+            _.templateSettings.variable = "data";
+
+            // setup our initial object literal to pass to the templates.
+            var specials = {
+                today:      new Date(),
+                template:   _.template($("#specials-template").html())
+            };
+
+            var month   = ("0" + (specials.today.getMonth() + 1)).slice(-2);
+            var day     = ("0" + specials.today.getDate()).slice(-2);
+
+            specials.comparator = parseInt(month + day);
+
+            if (specials.comparator >= 321 && specials.comparator < 621) {
+                // special is for spring of this year
+                specials.season     = "Spring";
+                specials.endMonth   = "June";
+                specials.endDay     = "20";
+                specials.endYear    = parseInt(specials.today.getFullYear());
+            }
+            else if (specials.comparator >= 621 && specials.comparator < 921) {
+                // special is for summer of this year
+                specials.season     = "Summer";
+                specials.endMonth   = "September";
+                specials.endDay     = "20";
+                specials.endYear    = parseInt(specials.today.getFullYear());
+            }
+            else if (specials.comparator >= 921 && specials.comparator < 1221) {
+                // special is for fall of this year
+                specials.season     = "Fall";
+                specials.endMonth   = "December";
+                specials.endDay     = "20";
+                specials.endYear    = parseInt(specials.today.getFullYear());
+            }
+            else if (specials.comparator >= 1221 || specials.comparator < 321) {
+                // special is for winter - we need to bump the expiration year to this year + 1
+                specials.season     = "Winter";
+                specials.endMonth   = "March";
+                specials.endDay     = "20";
+                if (specials.comparator >= 1221) {
+                    specials.endYear    = parseInt(specials.today.getFullYear()) + 1;
+                } else {
+                    specials.endYear = parseInt(specials.today.getFullYear());
+                }
+            }
+
+            $('.offer-heading').html(
+                _.template(specials.template(specials))
+            );
+
+
+
 
         <!-- Analytics
-        ============================================= -->
         <script type="text/javascript">
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

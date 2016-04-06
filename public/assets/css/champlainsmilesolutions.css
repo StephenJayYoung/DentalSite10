@@ -301,6 +301,7 @@ blockquote {
         border-color: #ffffff;
     }
 
+
 #offer {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -352,73 +353,12 @@ blockquote {
     color: #222222 !important;
 }
 
-.device-xxs #offer h2, .device-xs #offer h2 {
-    font-size: 22px;
-    margin-top: 5px !important;
-    text-align: center !important;
-}
 
-.device-xxs #offer h2, .device-xxs #offer h4, .device-xs #offer h2, .device-xs #offer h2 {
-    margin-bottom: 5px;
-    text-align: center !important;
-}
-
-.device-xxs #offer, .device-xs #offer {
-    padding: 10px 0;
-}
-
-.device-xxs #offer .call-today, .devixe-xs #offer .call-today {
-    font-size: 32px;
-    line-height: 36px;
-}
-
-.device-xxs #offer .col_half, .device-xs #offer .col_half {
-    margin-bottom: 10px !important;
-    text-align: center !important;
-}
-
-.device-xxs #offer h2 span, .device-xs #offer h2 span {
-    font-size: 18px;
-}
-
-#offer h2 span {
-    color: #ef6a35 !important;
-}
-
-.device-xxs #offer h2 span,
-.device-xs #offer h2 span {
-    font-size: 17px;
-}
-
-
-
-#services {
-    background-color: #f0f0f0;
-}
-
-    #services .service-item {
-        margin-bottom: 30px;
-    }
-
-    .device-xxs #services .service-item {
-        width: 100%;
-    }
-
-        #services .service-item article {
-            padding: 5px;
-            border: 1px solid rgba(0, 0, 0, ..075);
-            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-            background-color: #ffffff;
-            border-radius: 3px;
-        }
-
-            #services .service-item h3 {
-                font-size: 16px;
-                text-align: center;
-                margin: 0;
-                padding: 8px 0 3px 0;
-            }
-
+#services{background-color:#f1f3f9;}
+#services h3{font-size:32px;}
+.device-sm #services h3{font-size:24px;}
+.device-xxs #services h3{font-size:28px;}
+#services i{color:#0079c1;}
 #tour {
 
 }
