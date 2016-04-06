@@ -297,67 +297,6 @@ header #logo img {
     color: inherit;
 }
 
-#team {
-    background-color: #f0f0f0;
-}
-
-    #team .oc-item {
-        box-sizing: border-box;
-        padding: 1em;
-        border: 1px solid rgba(0, 0, 0, ..075);
-        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-        background-color: #ffffff;
-        border-radius: 3px;
-    }
-
-        #team .team-title h4 {
-            margin-top: 12px;
-        }
-
-#specials {
-
-}
-
-    #specials .heading-block span {
-        font-size: 1.1em;
-        line-height: 1.1;
-    }
-
-        #specials .heading-block span strong {
-            font-size: 1.4em;
-            color: #ff6400;
-        }
-    
-    #specials .special-offer {
-        padding: 10px;
-    }
-
-        #specials .pricing-box {
-            background-color: #ffffff;
-            border: 2px solid #0164a5;
-            border-radius: 5px;
-        }
-
-            #specials .pricing-title {
-                background-color: #0164a5;
-                color: #ffffff;
-            }
-
-                #specials .pricing-title h3 {
-                    color: inherit !important;
-                    text-shadow: 1px 1px 2px rgba(0, 0, 0, .75);
-                    line-height: 1.15;
-                    font-size: 1.25em;
-                }
-
-            #specials .pricing-price {
-                color: #0164a5;
-                font-weight: bold;
-            }
-
-            #specials .pricing-features {
-                border-bottom: none;
-            }
 
 #reviews {
     background: url('.../images/background.jpg') 50% 0% no-repeat;
