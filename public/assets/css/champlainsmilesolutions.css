@@ -2,7 +2,7 @@ body {
     color: #222222;
     font-family: 'Gentium Book Basic', serif;
     font-size: 16px;
-    line-height: 1.3;
+    line-height: 1.6;
 }
 
 h1,
@@ -268,17 +268,18 @@ blockquote {
 #offer {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #ff6400;
+    background-color: #ffffff;
 }
 
 #offer .call-today {
     display: inline-block;
     font-size: 38px;
     line-height: 40px;
+    color: #222222 !important;
 }
 
 #offer .call-today a {
-    color: #fff !important;
+    color: #ff6400 !important;
 }
 
 .button.button-rounded {
@@ -286,33 +287,33 @@ blockquote {
 }
 
 #offer .button {
-    border: 2px solid #ffffff;
-    background-color: #0164a5 !important;
+    border: 2px solid #ff6400;
+    background-color: #ff6400 !important;
     color: #ffffff !important;
     border-radius: 0px;  
 }
 
 #offer a.button:hover,
 #offer button:hover {
-    color: #0164a5 !important;
-    background-color: #ffffff !important;
+    color: #fff !important;
+    background-color: #0164a5 !important;
     border: 2px solid #0164a5;
 }
 
 #offer h2 {
-    color: #fff !important;
+    color: #222222 !important;
     text-transform: uppercase;
     margin-bottom: 10px;
     line-height: 1.1;
 }
 
 #offer h2 span {
-    color: #fff !important;
+    color: #222222 !important;
     text-transform: uppercase;
 }
 
 #offer h4 {
-    color: #fff !important;
+    color: #222222 !important;
 }
 
 
@@ -346,7 +347,7 @@ blockquote {
 }
 
 #offer h2 span {
-    color: #fff !important;
+    color: #222222 !important;
 }
 
 .device-xxs #offer h2 span,
@@ -453,7 +454,7 @@ hr {
         }
 
 #footer {
-    background-color: #febf3e;
+    background-color: #fff;
     color: #0164a5;
 }
     
@@ -470,12 +471,12 @@ hr {
 
     #copyrights {
         background-color: #0164a5;
-        color: #b9e3ff;
+        color: #fff;
     }
 
         #copyrights p,
         #copyrights p a {
-            color: inherit;
+            color: #fff;
         }
 
 .button {
