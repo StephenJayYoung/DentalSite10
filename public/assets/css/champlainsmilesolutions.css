@@ -370,33 +370,6 @@ hr {
     border-top: 1px solid #0079c1;
 }
 
-#tour {
-
-}
-
-    #tour .oc-item {
-        padding: 5px;
-        border: 1px solid rgba(0,0,0,0.075);
-        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-        background-color: #F3F3F3;
-        border-radius: 3px;
-    }
-
-#forms {
-    background-color: #f0f0f0;
-}
-
-    #forms a.button {
-        color: #0164a5 !important;
-        background-color: #ffffff;
-        border: 2px solid #0164a5 !important;
-    }
-
-    #forms a.button:hover {
-        background-color: #0164a5;
-        color: #ffffff !important;
-    }
-
 #location {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
