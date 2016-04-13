@@ -381,8 +381,43 @@ hr {
     padding-bottom: 0px !important;
 }
 
+
+
+#contact-form-overlay-mini-mobile {
+    position: relative;
+    max-width: 500px;
+    background-color: #FFF;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    z-index: 10;
+    border-radius: 4px;
+}
+
+/*#contact-form-overlay-mini-mobile {
+    float: right;
+    width: 380px;
+    margin: 0;
+}*/
+
+label.error {
+    margin-top: 5px;
+    color: #E42C3E;
+    font-weight: 400;
+}
+
+label.error { display: none !important; }
+
+.form-control.error,
+.sm-form-control.error { border-color: #E42C3E; }
+
+
 @media (max-width: 992px) {
     #contact-form-overlay, #contact-form-overlay-mini {
+         box-shadow: none !important; 
+         background-color: inherit !important;
+    }
+        #contact-form-overlay, #contact-form-overlay-mini-mobile {
          box-shadow: none !important; 
          background-color: inherit !important;
     }
