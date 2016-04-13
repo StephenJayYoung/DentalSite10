@@ -440,6 +440,10 @@ hr {
             font-weight: bold;
         }
 
+#gotoTop:hover{
+    background-color: #ff6400;
+}
+
 #footer {
     background-color: #fff;
     color: #0164a5;
